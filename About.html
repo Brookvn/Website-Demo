@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        position: relative;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=687');
+        background-size: cover;
+        background-position: center;
+        filter: brightness(0.75);
+        z-index: -2;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.25);
+        z-index: -1;
+    }
+
+    .navbar {
+        background: linear-gradient(90deg, #4438f0, #3dec7a);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        border-radius: 0 0 15px 15px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .navbar .logo img {
+        height: 45px;
+        width: auto;
+        border-radius: 8px;
+    }
+
+    .navbar .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 8px;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    .navbar .nav-links a:hover,
+    .navbar .nav-links a.active {
+        background: rgba(255,255,255,0.2);
+        color: #f9f9f9;
+    }
+
+    .page-title {
+        text-align: center;
+        margin: 20px 0 10px 0;
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        padding: 10px 20px;
+    }
+
+    .intro {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        color: white;
+        text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .avatar {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #764ba2;
+    }
+
+    .info h2 {
+        margin: 0 0 10px 0;
+        font-size: 2.2em;
+    }
+
+    .info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info ul li {
+        margin-bottom: 8px;
+        font-size: 1.15em;
+    }
+
+    @media (max-width: 768px) {
+        .intro {
+            flex-direction: column;
+            text-align: center;
+        }
+        .avatar {
+            width: 140px;
+            height: 140px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .page-title {
+            font-size: 2.2em;
+            margin: 15px 0 5px 0;
+        }
+        .info h2 {
+            font-size: 1.8em;
+        }
+        .info ul li {
+            font-size: 1em;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="https://scontent.fhph1-2.fna.fbcdn.net/v/t39.30808-6/525257286_733085156381738_6230834145056642668_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeE6AitSGjbQxR5rIDrdEjhUb7ytPLZfZDdvvK08tl9kNwZqJBBp3KyHQmeYhuzreHO4WDFXRLEQPOlU_Unmyldt&_nc_ohc=L0QDIzg-Kk0Q7kNvwG6Q7sQ&_nc_oc=Adktjvm_-A7iFwdmPHMbI5XWQ_DQoBMV6gKxAs1F0umH5IGMVhv1t5gb_dUCZJvXPE8&_nc_zt=23&_nc_ht=scontent.fhph1-2.fna&_nc_gid=10Qc4qFIDDWg_JohYd47Nw&oh=00_Afi-0AR4lHX4dVYcds06WtSsR9bkhPsQhq9tUC8GBh8GwQ&oe=69164E77" alt="Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>    
+        <li><a href="about.html" class="active">About</a></li>                    
+    </ul>
+</nav>
+
+<h1 class="page-title">Về Tôi</h1>
+
+<div class="container">
+    <div class="intro">
+        <img src="https://scontent.fhph1-2.fna.fbcdn.net/v/t39.30808-6/525257286_733085156381738_6230834145056642668_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeE6AitSGjbQxR5rIDrdEjhUb7ytPLZfZDdvvK08tl9kNwZqJBBp3KyHQmeYhuzreHO4WDFXRLEQPOlU_Unmyldt&_nc_ohc=L0QDIzg-Kk0Q7kNvwG6Q7sQ&_nc_oc=Adktjvm_-A7iFwdmPHMbI5XWQ_DQoBMV6gKxAs1F0umH5IGMVhv1t5gb_dUCZJvXPE8&_nc_zt=23&_nc_ht=scontent.fhph1-2.fna&_nc_gid=10Qc4qFIDDWg_JohYd47Nw&oh=00_Afi-0AR4lHX4dVYcds06WtSsR9bkhPsQhq9tUC8GBh8GwQ&oe=69164E77" alt="Ảnh đại diện" class="avatar">
+
+        <div class="info">
+            <h2>Ngô Văn Thiệu</h2>
+            <ul>
+                <li><b>Ngày Sinh:</b> 27-07-2009</li>
+                <li><b>Giới Tính:</b> Nam</li>
+                <li><b>Nơi học tập:</b> Trường THPT chuyên Trần Phú</li>
+                <li><b>Lớp:</b> 11 Tin</li>
+                <li><b>Sở Thích:</b> Đọc sách, đá bóng</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

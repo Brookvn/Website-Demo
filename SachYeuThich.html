@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia sẻ sách yêu thích</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background: white;
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #764ba2;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #764ba2;
+            box-shadow: 0 0 6px rgba(118,75,162,0.4);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-button {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        button {
+            background: #764ba2;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #5a3889;
+            transform: translateY(-2px);
+        }
+
+        input[type="file"] {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Chia sẻ về cuốn sách bạn yêu thích 📚</h2>
+        <form>
+            <label for="ten-sach">Tên sách:</label>
+            <input type="text" id="ten-sach" name="ten-sach" placeholder="Nhập tên sách..." required>
+
+            <label for="tac-gia">Tác giả:</label>
+            <input type="text" id="tac-gia" name="tac-gia" placeholder="Nhập tên tác giả..." required>
+
+            <label for="the-loai">Thể loại:</label>
+            <select id="the-loai" name="the-loai" required>
+                <option value="">-- Chọn thể loại --</option>
+                <option>Tiểu thuyết</option>
+                <option>Truyện ngắn</option>
+                <option>Khoa học</option>
+                <option>Kinh tế</option>
+                <option>Tâm lý - Kỹ năng sống</option>
+                <option>Khác</option>
+            </select>
+
+            <label for="mo-ta">Mô tả ngắn gọn về nội dung:</label>
+            <textarea id="mo-ta" name="mo-ta" placeholder="Tóm tắt nội dung chính của sách..."></textarea>
+
+            <label for="ly-do">Lý do bạn yêu thích cuốn sách này:</label>
+            <textarea id="ly-do" name="ly-do" placeholder="Chia sẻ cảm nhận, bài học hoặc ấn tượng của bạn..."></textarea>
+
+            <label for="anh-bia">Ảnh bìa (tùy chọn):</label>
+            <input type="file" id="anh-bia" name="anh-bia" accept="image/*">
+
+            <div class="form-button">
+                <button type="submit">Gửi thông tin</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

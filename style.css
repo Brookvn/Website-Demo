@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #de5757, #f8e23e); /* gradient xanh tím */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0; /* sửa từ 50 -> 0 để navbar căn đúng */
+    width: 100%; /* 150% khiến thanh bị tràn, sửa lại 100% */
+    background: linear-gradient(to right, #667eea, #764ba2);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Hiệu ứng hover */
+.navbar .nav-links li a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.1);
+}
+
+/* Tab đang active (trang hiện tại) */
+.navbar .nav-links li a.active {
+    background: rgba(255,255,255,0.4);
+    transform: scale(1.1);
+}
+
+/* Container — tạo khoảng cách dưới navbar */
+.container {
+    max-width: 1200px;
+    margin: 120px auto 20px;
+    padding: 0 20px;
+}
+
+/* Card */
+.card {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+}
+
+/* Avatar */
+.avatar-container {
+    flex-shrink: 0;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Info */
+.info {
+    text-align: left;
+}
+
+.info h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.info ul li {
+    margin-bottom: 10px;
+}

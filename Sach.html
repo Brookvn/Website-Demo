@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sách yêu thích</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #2a46c7, #5a79e9);
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        background-color: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .navbar .logo img {
+        height: 45px;
+        width: auto;
+        border-radius: 8px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+        color: #ffffff;
+    }
+
+    .intro-section {
+        text-align: center;
+        color: white;
+        padding: 60px 20px 40px;
+    }
+
+    .intro-section h1 {
+        font-size: 2.8em;
+        margin-bottom: 20px;
+    }
+
+    .book-info {
+        background: rgba(255, 255, 255, 0.1);
+        display: inline-block;
+        padding: 25px 30px;
+        border-radius: 15px;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto 30px;
+        backdrop-filter: blur(5px);
+    }
+
+    .book-info img {
+        width: 100%;
+        max-width: 400px; 
+        height: auto;
+        display: block;
+        margin: 0 auto 20px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+    }
+
+    .book-info img:hover {
+        transform: scale(1.05);
+    }
+
+    .book-info p {
+        margin: 8px 0;
+        line-height: 1.6;
+        font-size: 1.1em;
+    }
+
+    .intro-text {
+        max-width: 700px;
+        margin: 20px auto 0;
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+
+    .form-container {
+        max-width: 700px;
+        background: white;
+        margin: 30px auto 60px;
+        padding: 40px 50px;
+        border-radius: 20px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        font-size: 1.2em;
+    }
+
+    .form-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .form-container h2 {
+        color: #764ba2;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    .form-container p {
+        margin-bottom: 25px;
+        font-size: 1.2em;
+    }
+
+    .form-button button {
+        background: #764ba2;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.3em;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .form-button button:hover {
+        background: #5a3889;
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 500px) {
+        .intro-section h1 {
+            font-size: 2em;
+        }
+        .book-info img {
+            max-width: 90%;
+        }
+        .form-container {
+            padding: 30px 20px;
+            font-size: 1.1em;
+        }
+        .form-container h2 {
+            font-size: 1.6em;
+        }
+        .form-button button {
+            font-size: 1.2em;
+            padding: 12px 25px;
+        }
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://scontent.fhph1-2.fna.fbcdn.net/v/t39.30808-6/525257286_733085156381738_6230834145056642668_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeE6AitSGjbQxR5rIDrdEjhUb7ytPLZfZDdvvK08tl9kNwZqJBBp3KyHQmeYhuzreHO4WDFXRLEQPOlU_Unmyldt&_nc_ohc=L0QDIzg-Kk0Q7kNvwG6Q7sQ&_nc_oc=Adktjvm_-A7iFwdmPHMbI5XWQ_DQoBMV6gKxAs1F0umH5IGMVhv1t5gb_dUCZJvXPE8&_nc_zt=23&_nc_ht=scontent.fhph1-2.fna&_nc_gid=10Qc4qFIDDWg_JohYd47Nw&oh=00_Afi-0AR4lHX4dVYcds06WtSsR9bkhPsQhq9tUC8GBh8GwQ&oe=69164E77" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>    
+            <li><a href="about.html">About</a></li>    
+            <li><a href="Sach.html" class="active">Sách yêu thích</a></li>                
+        </ul>
+    </nav>
+
+    <section class="intro-section">
+        <h1>Giới thiệu sách của tôi 📖</h1>
+
+        <div class="book-info">
+            <img src="https://thegioicotich.vn/wp-content/uploads/2019/09/de-men-phieu-luu-ky-chuong-4-cua-nha-van-to-hoai.png" alt="Dế Mèn phiêu lưu ký">
+            <p><strong>Tác giả:</strong> Tô Hoài</p>
+            <p><strong>Thể loại:</strong> Tuổi Học Trò</p>
+            <p>
+                "Dế Mèn phiêu lưu ký" kể về cuộc hành trình trưởng thành của chú dế mèn thông qua những cuộc phiêu lưu và bài học đường đời. 
+                Cuốn truyện dạy rằng không nên kiêu căng, hung hăng mà phải biết suy nghĩ trước khi hành động để tránh "mang vạ vào thân", 
+                đồng thời khuyên con người nên biết yêu thương, bao dung, tha thứ, sửa sai và sống có trách nhiệm với bản thân và cộng đồng.
+            </p>
+        </div>
+
+        <p class="intro-text">
+            Tôi là một người thích đọc sách và luôn tin rằng mỗi cuốn sách đều chứa đựng một thế giới riêng — nơi ta có thể tìm thấy tri thức, cảm xúc, và đôi khi là chính bản thân mình.  
+            Trang này là nơi tôi chia sẻ những cuốn sách mà tôi yêu thích nhất, cùng những lý do khiến chúng trở nên đặc biệt trong hành trình đọc của tôi.
+        </p>
+    </section>
+
+    <div class="form-container">
+        <h2>Chia sẻ về cuốn sách bạn yêu thích 📚</h2>
+        <p>Bạn có thể chia sẻ cảm nhận và thông tin về cuốn sách mà bạn yêu thích nhất!</p>
+        
+        <div class="form-button">
+            <a href="SachYeuThich.html">
+                <button type="button">Đến trang chia sẻ sách</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
